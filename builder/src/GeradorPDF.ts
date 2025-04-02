@@ -160,20 +160,20 @@ export default class GeradorPDF {
 
   toString(): string {
     return `
-      pageOrientation = ${this.pageOrientation}\n;
-      unit = ${this.unit}\n;
-      pageSizeX = ${this.pageSizeX}\n;
-      pageSizeY = ${this.pageSizeY}\n;
-      marginTop = ${this.marginTop}\n;
-      marginRight = ${this.marginRight}\n;
-      marginBottom = ${this.marginBottom}\n;
-      marginLeft = ${this.marginLeft}\n;
-      hasHeader = ${this.hasHeader}\n;
-      headerHight = ${this.headerHight}\n;
-      hasFooter = ${this.hasFooter}\n;
-      footerHight = ${this.footerHight}\n;
-      pageColor = ${this.pageColor}\n;
-      encode = ${this.encode}\n;
+pageOrientation = ${this.pageOrientation};
+unit = ${this.unit};
+pageSizeX = ${this.pageSizeX};
+pageSizeY = ${this.pageSizeY};
+marginTop = ${this.marginTop};
+marginRight = ${this.marginRight};
+marginBottom = ${this.marginBottom};
+marginLeft = ${this.marginLeft};
+hasHeader = ${this.hasHeader};
+headerHight = ${this.headerHight};
+hasFooter = ${this.hasFooter};
+footerHight = ${this.footerHight};
+pageColor = ${this.pageColor};
+encode = ${this.encode};
     `;
   }
 }
