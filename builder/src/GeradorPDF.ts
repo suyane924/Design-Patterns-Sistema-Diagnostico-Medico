@@ -1,18 +1,18 @@
 export default class GeradorPDF {
-  private pageOrientation: string;
-  private unit: string;
-  private pageSizeX: number;
-  private pageSizeY: number;
-  private marginTop: number;
-  private marginRight: number;
-  private marginBottom: number;
-  private marginLeft: number;
-  private hasHeader: boolean;
-  private headerHight: number;
-  private hasFooter: boolean;
-  private footerHight: number;
-  private pageColor: string;
-  private encode: string;
+  private pageOrientation: string = "portrait";
+  private unit: string = "mm";
+  private pageSizeX: number = 210;
+  private pageSizeY: number = 297;
+  private marginTop: number = 30;
+  private marginRight: number = 20;
+  private marginBottom: number = 30;
+  private marginLeft: number = 20;
+  private hasHeader: boolean = false;
+  private headerHight: number = 0;
+  private hasFooter: boolean = false;
+  private footerHight: number = 0;
+  private pageColor: string = "#ffffff";
+  private encode: string = "UTF-8";
 
   constructor(
     pageOrientation: string,
