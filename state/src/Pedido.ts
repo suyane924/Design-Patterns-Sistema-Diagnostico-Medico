@@ -12,7 +12,7 @@ export class Pedido {
     this.estado = PedidoEstado.AGUARDANDO_PAGAMENTO;
   }
 
-  pago() {
+  pagar() {
     if (this.estado !== PedidoEstado.AGUARDANDO_PAGAMENTO) {
       throw new Error("O pedido não está aguardando pagamento");
     }
