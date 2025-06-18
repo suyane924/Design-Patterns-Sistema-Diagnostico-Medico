@@ -54,43 +54,45 @@ O usuário (ou sistema externo) interage com uma interface única e intuitiva, s
 ## 🗂️ Estrutura das Classes
 
 ```plaintext
-+---------------------+
-|    SymptomData      |
-+---------------------+
-| - symptoms: List<String> |
-+---------------------+
++------------------------+
+|     DadosSintomas      |
++------------------------+
+| - sintomas: List<String> |
++------------------------+
 
-                   uses
-                     |
-                     v
+          utiliza
+             |
+             v
 
-+---------------------+
-|   Specialist        |<<abstract>>
-+---------------------+
-| - next: Specialist  |
-+---------------------+
-| + setNext(Specialist): void      |
-| + handle(SymptomData): void      |
-| # canDiagnose(SymptomData): bool |
-| # diagnose(SymptomData): void    |
-+---------------------+
-            ▲
-            |
-   ---------------------
-   |         |         |
-+------------+----------------+-----------------+
-| Cardiologist               | Neurologist      | Infectologist     |
-+----------------------------+------------------+-------------------+
-| + canDiagnose(data): bool  | ...              | ...               |
-| + diagnose(data): void     | ...              | ...               |
-+----------------------------+------------------+-------------------+
++------------------------+
+|     Especialista       | <<abstrato>>
++------------------------+
+| - proximo: Especialista |
++------------------------+
+| + definirProximo(Especialista): Especialista |
+| + analisar(DadosSintomas): string             |
+| # podeDiagnosticar(DadosSintomas): bool       |
+| # diagnosticar(DadosSintomas): string          |
++------------------------+
+           ▲
+           |
+   ----------------------
+   |          |          |
++-------------+---------------+-----------------+
+| Cardiologista              | Neurologista     | Infectologista     |
++---------------------------+------------------+--------------------+
+| + podeDiagnosticar(data): bool  | ...              | ...              |
+| + diagnosticar(data): string     | ...              | ...              |
++---------------------------+------------------+--------------------+
 
-                          ^
-                          |
-                 calls    |
-                          |
-+-------------------------------+
-|       DiagnosisSystem         | <<Facade>>
-+-------------------------------+
-| - first: Specialist           |
-+--------------------
+                             ^
+                             |
+                    chama     |
+                             |
++----------------------------------+
+|        SistemaDiagnostico         | <<Facade>>
++----------------------------------+
+| - primeiroEspecialista: Especialista |
++----------------------------------+
+| + diagnosticar(sintomas: string[]): string |
++----------------------------------+
