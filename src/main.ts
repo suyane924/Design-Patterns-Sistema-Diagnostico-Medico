@@ -8,7 +8,8 @@ const pacientes = [
   ["dor no peito", "pressão alta"],
   ["febre", "dores no corpo"],
   ["convulsão"],
-  ["cansaço", "coceira"] // sintomas que nenhum especialista reconhece
+  ["cansaço", "coceira"], // sintomas que nenhum especialista reconhece
+  []                      // teste do array vazio
 ];
 
 pacientes.forEach((sintomas, i) => {
