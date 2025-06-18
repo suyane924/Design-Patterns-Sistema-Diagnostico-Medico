@@ -1,5 +1,3 @@
-// Facade que monta e expõe a cadeia de especialistas
-
 import { DadosSintomas } from "./DadosSintomas";
 import { Especialista } from "./Especialista";
 import { Cardiologista } from "./Cardiologista";
@@ -22,6 +20,10 @@ export class SistemaDiagnostico {
 
   // Método principal chamado externamente para diagnóstico
   public diagnosticar(sintomas: string[]): string {
+    if (!sintomas || sintomas.length === 0) {
+      return "Erro: Nenhum sintoma foi fornecido para o diagnóstico.";
+    }
+
     const dados = new DadosSintomas(sintomas);
     return this.primeiroEspecialista.analisar(dados);
   }
