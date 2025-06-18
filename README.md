@@ -43,7 +43,7 @@ O usuário (ou sistema externo) interage com uma interface única e intuitiva, s
 
 ## 🔄 Como tudo se conecta
 
-1. O usuário chama o método `diagnose()` da fachada.
+1. O usuário chama o método `diagnosticar()` da fachada.
 2. A fachada passa os sintomas para o primeiro especialista.
 3. O primeiro especialista tenta diagnosticar.
 4. Se não conseguir, passa para o próximo… até o fim da cadeia.
