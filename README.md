@@ -115,5 +115,3 @@ Ao encerrar, o sistema exibe um histórico de todos os diagnósticos feitos dura
 | + exibirHistorico(): void                     |
 +--------------------------------------------+
 
-
-+----------------------------------+
