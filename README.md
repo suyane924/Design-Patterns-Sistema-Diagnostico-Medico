@@ -37,11 +37,11 @@ Ao encerrar, o sistema exibe um histórico de todos os diagnósticos feitos dura
 
 | Especialista          | Sintomas reconhecidos                          |
 |-----------------------|-----------------------------------------------|
-| Cardiologista         | dor no peito, pressão alta, taquicardia       |
-| Neurologista          | dor de cabeça, convulsão, tontura              |
+| Cardiologista         | dor no peito, pressao alta, taquicardia       |
+| Neurologista          | dor de cabeca, convulsao, tontura              |
 | Infectologista        | febre, calafrios, dores no corpo               |
-| Dermatologista        | coceira, vermelhidão, manchas                  |
-| Gastroenterologista   | dor abdominal, náusea, diarreia                |
+| Dermatologista        | coceira, vermelhidao, manchas                  |
+| Gastroenterologista   | dor abdominal, nausea, diarreia                |
 
 ---
 
